@@ -1,0 +1,5 @@
+<launch>
+<node pkg="alpha_controller" type="robot_command_listener.py" name="robot_command_listener" output="screen" />
+<node pkg="alpha_controller" type="robot_sensor_transmitter.py" name="robot_sensor_transmitter" output="screen" />
+<include file="$(find raspicam_node)/launch/camerav2_410x308_30fps.launch" />
+</launch>
